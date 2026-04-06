@@ -1,8 +1,8 @@
-# CSS Learning Journey & Mini-Projects 
+# CSS Learning Journey & Mini-Projects 🎨
 
 Welcome to my CSS learning repository! This workspace contains all my experimentation files, learning notes, and mini-projects as I dived into the world of cascading style sheets.
 
-## My CSS Journey
+## 🕰️ My CSS Journey
 
 I started my deep dive into core CSS during the last few months of **2025**, building a strong foundation in modern web styling. By the start of **2026**, I challenged myself to put these skills to the test by building a Netflix Landing Page clone. 
 
@@ -10,7 +10,7 @@ However, as my study schedule grew more demanding with other academic commitment
 
 ---
 
-## Projects & Live Demos
+## 🚀 Projects & Live Demos
 
 Alongside my core learning files, I built a few creative static pages to experiment with different design aesthetics.
 
