@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 10px auto;
+            background-color: lightskyblue;
+            width: 1075px;
+            height: 514px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .box1 {
+            position: relative;
+            background-color: red;
+            border-radius: 50%;
+            height: 75px;
+            width: 75px;
+            animation: drops 1s ease-in 1s 1,
+                        animateX 4s linear 2s infinite,
+                        animateY 1s ease-out 2s infinite alternate;
+        }
+
+        @keyframes drops {
+            from {
+                top: 0;
+            }
+            to {
+                top: 85%;
+            }
+        }
+        @keyframes animateX {
+            from {
+                left: 0;
+            }
+            to {
+                left: 93%;
+            }
+        }
+        @keyframes animateY {
+            from {
+                top: 85%;
+            }
+            to {
+                top: 0%;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+    <div class="container">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

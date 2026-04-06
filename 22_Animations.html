@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            height: 40vh;
+            width: 50vw;
+        }
+        .box {
+            height: 4vh;
+            width: 5vw;
+            background-color: lightgreen;
+            animation-name: myAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            /* animation-fill-mode:forwards;  when animation stops the element retaines the initial from properties, if backwards, it retains original properties outside keyframes */
+            /* animation-play-state: paused;  used with javascript pauses an animation an the point it this property becmomes active */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;   shorthand for animatino */
+        }
+
+        @keyframes myAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                transform: translateX(500px);
+                background-color: yellow;
+            }
+        }
+
+        .container .box2 {
+            height: 4vh;
+            width: 5vw;
+            margin: 100px auto;
+            background-color: lightgreen;
+            animation: myAnimation2 1s ease-in-out 2s infinite alternate-reverse,
+                       parts 6s ease-in-out 2s infinite ;
+        }
+        
+        @keyframes myAnimation2 {
+            from{
+                background-color: lightgreen;
+            }
+            to{
+                background-color: green;
+                color:white
+            }
+        }
+        @keyframes parts {
+            20% {
+                transform: rotate(60deg);
+            }
+            20% {
+                transform: rotate(120deg);
+            }
+            40% {
+                transform: rotate(180deg);
+            }
+            60% {
+                transform: rotate(240deg);
+            }
+            80% {
+                transfrom: rotate(300deg)
+            }
+            100%{
+                transform: rotate(360deg)
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box animate">Box</div>
+        <div class="box2 animate">Box</div>
+    </div>
+</body>
+</html>

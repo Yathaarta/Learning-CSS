@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 90px;
+            width: 90px;
+            background-color: beige;
+            border: 2px solid black;
+        }
+        .box1:hover {
+            /* transform: rotate(0.25turn)   */
+             /*can use degree and turn, 1turn=90deg*/
+
+             transform: rotateX(70deg);     
+
+             /*rotates about given axis in given degree*/
+             /* imagine if box rest is sticking to +ve X and Y axis and z axis inside screen, then rotateX 90 deg will make box align +ve X axis and -ve Y axis*/
+        }
+        
+        .box2 {
+            transform: none;
+        }
+        .box2:hover{
+            /*skew and scale*/
+            transform: scale(1.3) skew(15deg) translateY(-75px);        
+            /*if write one after another, the latest transform will only take place, hence use in one line if want to apply all*/    
+            /*can also skewY and skewX but not skewZ */
+            /*translateX or Y shifts the box in x or y direction by given value */
+        }
+        .box3:hover{
+              transform: rotate(-55deg);
+              transform-origin: 0px 0px;   
+              /*we can set axis of rotation , rn 0px from x and 0px from y ie (0,0) coordinate, ie top left corner of original box*/
+
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box</div>
+        <div class="box box2">Box</div>
+        <div class="box box3">Box</div>
+    </div>
+</body>
+</html>

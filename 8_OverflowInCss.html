@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        
+        .box {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            overflow: auto;    /*difference btw auto and scroll is that scroll always shows scrollbar even if not needed*/
+            /* overflow: hidden;   hides overflowed content */
+            /* overflow: clip;     clips overflowed content without scrollbars */
+            /* overflow-x and overflow-y can be used to control overflow in specific directions */
+
+            /* shorthand for x an y overflow can be done like this:*/
+            /* overflow: hidden scroll;  (x is hidden, y is scroll) */
+
+            /* white-space: nowrap;     prevents text from wrapping to the next line */
+            /* text-overflow: ellipsis;        adds "..." when text overflows */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et voluptates, rerum natus unde totam obcaecati in deleniti eveniet facilis distinctio optio ad nostrum corporis culpa eum quas repellendus dolor. Maxime illo nostrum minus assumenda ipsam inventore. Veritatis at totam, dolores exercitationem illo adipisci assumenda nemo fugiat. Ut, cumque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia cum earum facere, necessitatibus facilis atque! Tempora illo, id magnam reiciendis soluta eum consequatur. Voluptate molestias officiis libero voluptatibus dolorum excepturi eius deserunt nobis assumenda aut quidem minima, alias facilis! Delectus, omnis autem. Tempora, ipsa voluptas.</p>
+    </div>
+</body>
+</html>

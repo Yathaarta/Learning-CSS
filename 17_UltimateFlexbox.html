@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center;        centers around main axis of flex direction */
+            align-items: center;
+            flex-direction: row;      /*reverse for reverse order*/
+            flex-wrap: wrap;         /*items will go to next line if not enough space*/
+            align-content: flex-start;   /*when there are multiple rows, aligns the rows on the cross axis*/
+
+            /* align-items: flex-start; */   /*aligns items on the cross axis, it is used for single row flex containers unlke align-content which is for multi row flex containers*/
+
+            /* there is no justify-items in flexbox */
+
+            /* flex-flow: row wrap; */   /*shorthand for flex-direction and flex-wrap*/
+
+            gap: 20px;  /*gap between items*/
+            /* can give row-gap and column-gap also differently also , in shorthand gap: rowgap colgap; */
+
+
+        }
+        .item{
+            color: white;
+            font-size: 24px;
+            height: 72px;
+            width: 72px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            /* margin: 4px; */
+            flex-grow: 1;   
+            
+        }
+
+        .order1{
+            order: 3;   /*default is 0, items are arranged in ascending order, if same order value then in source order*/
+            flex-grow: 6;
+        }
+        .order2{
+            order: 2;
+            /* flex-shrink: 2;   gives higher priority to shrink when space is less, doesn't work if flex-grow or wrap is used */
+        }
+
+        .order3 {
+            align-self: flex-end;   /*overrides align-items for that particular item doesnt' work if align-content is used */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item order1">1</div>      <!--the items will try to fit in one row when flex is used-->
+        <div class="item order2">2</div>
+        <div class="item order3">3</div>
+        <div class="item order4">4</div>
+        <div class="item order5">5</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <!-- <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> -->
+    </div>
+</body>
+</html>

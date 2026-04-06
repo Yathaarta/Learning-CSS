@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+        }
+
+        .box{
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 25px;
+            border: 2px solid black;
+            
+        }
+
+        .box1{
+            background-color: aqua;
+            height: 111px;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            position: sticky;  
+            /*sticks to the top of the viewport when we scroll down */
+            top: 0px;
+            
+        }
+        .box2{
+            background-color: mediumspringgreen; 
+            /* position: relative;
+            top: -50px;
+            left: 45px;      
+            z-index: -1;      */
+            /*we can control which box comes on top by changing the order in html or by z-index property*/
+            /*lower the value, lower the priority by default z-index is 0 here -1 so, this box is behind box1 */
+
+        }
+        .box3{
+            background-color: lightcoral;
+            /* position: absolute;
+            bottom: 0px;
+            left: 0px; */
+            /*from the nearest positioned ancestor which is parent here */
+                      
+        }
+        .box4{
+            background-color:blanchedalmond;
+            /* position: fixed;    fixes positioin relative to the viewport
+            bottom: 0px; */    
+        }
+
+        .parent {
+            box-sizing: border-box;
+            width: auto;
+            margin: 40px;
+            padding: 50px;
+            border: 3px solid black;
+            position: absolute;
+            
+            /* transform, filter, or perspective properties can also make an element appear as positioned ancestor */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>

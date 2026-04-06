@@ -1,0 +1,95 @@
+<!--Learning fr units, gap property, align item/content and justify items/content, repeat syntax -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 70vh;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;  /* fr unit is fraction of available space */
+            /* gap: 34px;   */
+            row-gap: 15px;
+            column-gap: 30px;
+            /* shorthand for row-gap and column-gap is  gap: row-gap column-gap; */
+            /* use gap for flex and grid not padding or margin cause gap only affects the gaps between items not the outer edges */
+
+            justify-items: center;  /* will align items in horizontal direction in thier grid area here */
+            align-items: center;    /* will align items in vertical direction in thier grid area here */
+
+            /* justify-content: center;  will align the whole grid in horizontal direction in the container */
+            /* align-content: center;    will align the whole grid in vertical direction in the container */
+            /* visible if the grid is smaller than the container  */
+
+        }
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+
+        .item2 {
+            align-self: start; /* overrides the align-items for this specific item */
+            justify-self: end; 
+        }
+
+        .container2 {
+            width: 80vw;
+            height: 70vh;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(100px, 1fr)); /* repeat syntax to repeat columns, minmax to set min and max size of column, takes col size 100px and max 1fr, for columns its size is its width */
+        }
+        .container3 {
+            width: 80vw;
+            height: 70vh;
+            gap: 10px 44px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 80px);    /*grid is smaller than container here */
+            grid-template-rows: repeat(2, 80px); 
+            justify-items: center;
+            align-items: center;
+
+            justify-content: center;
+            align-content: center;
+
+            /* place-content: center;   will both justify and align content to specified value */
+
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

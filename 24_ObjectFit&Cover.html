@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .container{
+            height: 634px;
+            width:688px;
+            border: 4px solid yellowgreen;
+            background-color: azure;
+        }
+        .container img {
+            height: 634px;
+            width:688px;
+            object-fit: cover;       /*contain will maintain original ratio of img and use white gaps to fill height and widht*/
+            /*cover will cover the given size not but not shrink or resize to fit but cover , we can control which part of image covers fit */
+            object-position: top right;       
+            /*10px 20px      aslo valid */
+        }
+
+        /*can use image as background of element also*/
+        .container2{
+            height: 634px;
+            width:688px;
+            border: 4px solid yellowgreen;
+            background-color: azure;
+            background-image: url("https://cdn.pixelbin.io/v2/dummy-cloudname/original/upscalemedia_assets/home_page/Individual_After.png?f_auto=true");
+            background-position: bottom left;
+            /* background-repeat: no-repeat;  to stop repeat  */
+
+            /* if image is short it any axis it will repeat in that axis to fit container size , here Y*/
+        }
+
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="https://cdn.pixelbin.io/v2/dummy-cloudname/original/upscalemedia_assets/home_page/Individual_After.png?f_auto=true" title="original image">
+        <figcaption>Original Image</figcaption>
+    </figure>
+    <div class="container">
+        <img src="https://cdn.pixelbin.io/v2/dummy-cloudname/original/upscalemedia_assets/home_page/Individual_After.png?f_auto=true">
+    </div>
+    <div class="container2">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            height: 40vh;
+            width: 50vw;
+        }
+        .box {
+            background-color: lightgreen;
+            height: 4vh;
+            width: 5vw;
+
+            transition-property: background-color, transform;
+            /*can select all, so all property will transition, or comma seperate like color, transfrom , etc*/
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;      /*can get customized timing function also from dev tools of browser*/
+            transition-delay: 1s;
+
+            /*shorthand for above
+            transition: all 3s ease-in-out 1s;  */
+        }
+
+        .translate {
+            transform: translateX(10vw) translateY(10vh);
+            background-color: blueviolet;           /*check by removing translate property by removing translate class*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

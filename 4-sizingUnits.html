@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {         
+            border: 2px solid black;
+            box-sizing: border-box;
+            height: 10vh;
+            width: 80vw;
+            /* width: 1536px;           px is 1/96th of 1inch*/
+            background-color: aqua; 
+
+            /*this laptop screen is 1920x1080p in widht and height if use border box sizing then border is also included in it*/
+            /*but the laptop scaling is set to 125% hence 1536px widht takes full widht of screen*/
+            /*but since this is not good way to fit screen since all screen have diff resolution we use vw - veiw port widht/heigh similar to % size fit of screen */
+
+            /*use margin auto, it applies equal margin on left and right side to center the box, it works only when width is specified */
+            margin: auto;   
+        }
+        .container {
+            border: 2px solid black;
+            box-sizing: border-box;
+            min-height: 30vh;   /* min height is 30% of view port height it will expand if content is more */
+            width: 80vw;
+            /* height: 70vh; */
+            margin: 25px auto;
+            font-size:18px;
+            background-color: lightgreen;
+        }
+  
+        .container p {
+            font-size: 1.5em; /* 1em = current font size of element, here it is 18px hence 1.5em = 27px */;
+            font-size: 1.2rem ; /* 1rem = root element font size, here it is 16px hence 1.2rem = 1.2*16px */ ;
+            
+        }
+
+        .anotherCont {
+            background-color: aqua;
+
+            width: 100vmin;      /* works takes vh or vw bases on which one is minimun on pc hight is less on mobile widht is*/
+            border: 2px solid black;
+            margin: auto;
+        }
+        .subcont {
+            
+            display: flex;
+            width: 98%;
+            margin: 10px auto;
+            gap: 1%
+        }
+        .left, .right {
+            background-color: rgb(75, 238, 75);
+            width: 50%;   
+            border: 2px solid darkred;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="box"> This is a box </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati beatae ducimus, dolorum natus quo numquam impedit! Nulla alias id dolor, voluptatum maiores officia dolorum. Odit expedita, impedit explicabo distinctio labore porro quod. Quas, soluta distinctio earum et minima nulla, consequatur exercitationem tempora adipisci dignissimos commodi minus vitae sunt ipsa harum in labore, consectetur nisi facere perspiciatis.<br><br>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, ex maxime distinctio nesciunt illum culpa dolores repellat ipsam debitis laudantium recusandae beatae porro!</p><br><br>
+        
+        <div class="subcont">
+            <p class="left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eaque mollitia quas optio repellat nihil ratione quia, illo ex eligendi adipisci eos error quisquam hic. Aut, doloremque quo ea, tenetur quibusdam vel cumque labore in, repellat exercitationem est error optio voluptates reiciendis asperiores enim voluptatibus.
+            </p>
+            <p class="right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eaque mollitia quas optio repellat nihil ratione quia, illo ex eligendi adipisci eos error quisquam hic. Aut, doloremque quo ea, tenetur quibusdam vel cumque labore in, repellat exercitationem est error optio voluptates reiciendis asperiores enim voluptatibus.
+            </p>
+        </div>
+    </div>
+
+    <div class="anotherCont">
+        This is another container.
+    </div>
+</body>
+</html>
+<!-- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units -->

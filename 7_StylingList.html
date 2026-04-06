@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Lists</title>
+    <style>
+        nav ul li {
+            /* list marker is by default outside the content box */
+
+            list-style-type: "❤️"; 
+            /*difference in list-style and list-style-type is that list-style is shorthand property which can set multiple properties at once like type, position, image etc*/ 
+
+            list-style-position: inside;         
+            /* comment this to see the difference */
+
+            /* list-style-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXdscGk1amJkanJ0b2R1bWh6ODhsYjFoenhnZ2p4eDNjb3BhbnJtcyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5k5vZwRFZR5aZeniqb/giphy.gif");   */
+
+            /* all above can be written in single line using list-style shorthand property */
+            /* list-style: "❤️" inside url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKq2vhwDSHtPaToIkaF_6PmHup3uDuBVcunA&s"); */
+
+            background-color: lightgreen;
+            border:2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

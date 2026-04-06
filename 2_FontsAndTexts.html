@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* we can use defaul fonts or import to attach link to from google fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+        h1 {
+            font-family:'Poppins';
+            text-align: center;
+        }
+        p {
+            font-family:'Baloo Bhai 2', sans-serif;   /*other is fallback font , if first not available then they apply*/
+
+            /*font-size:20px;
+            font-weight:900;
+            font-style: italic;*/
+
+            line-height: 1.8;  /*by defaul 1.2*/
+        }
+        #Topic {
+            letter-spacing: 10px;
+        }
+
+        h2{
+            text-transform: capitalize; /*similarily can do uppercase, lowercase, etc*/
+            text-decoration: underline;
+            text-decoration-color: darkslategrey;
+            text-decoration-style:none;
+            text-decoration-thickness: 4px;
+            text-indent: 15px;
+        }
+
+        #para {
+            border: 2px solid gray;
+            width: 450px;       /*try changing to 40 or 50 to see effect of below props*/
+            text-overflow: ellipsis;     /*try changin to clip*/
+            overflow: hidden;
+            word-break: break-all;   /*try changing to keep-all*/ 
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>Fonts & Texts</h1>
+        <h2> discussing its properties </h2>
+        <p id="Topic">This is exploring Css properties of fonts and texts.</p>
+        <p id="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore in voluptatum, sint, numquam pariatur repellendus quod fugit nulla delectus ea maiores tempora ut corporis, qui natus nisi minima consequuntur saepe hic ex sit nesciunt iste architecto dolores? Atque quos quam nihil assumenda vero? Voluptatibus, velit.</p>
+    </div>
+</body>
+</html>
+
+
+<!-- imp links
+
+all defaul named colors in css => https://codepen.io/web-dot-dev/pen/ZELGraM 
+
+colors can be written in form of solidnames, hex, rgb , hsl, etc-->

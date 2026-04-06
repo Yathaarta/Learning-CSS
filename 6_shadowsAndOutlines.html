@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            padding: 34px;
+            border: 2px solid black;
+            box-shadow: 5px 4px 4px gray;       /* horizontaloffset verticaloffset blur color */
+        }
+        .text-elem {
+            text-shadow: 1px 1px 2px red;   
+            border: 2px solid black;
+            outline: 2px solid red;     /* outline is drawn outside the border and doesn't take space in box model unlike border */
+            outline-offset: 2px;        /* space between border and outline */
+            border-radius: 6px;     /* rounded corners for border also outline follows the same radius */
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box.
+    </div>
+    <p class="text-elem">    <!--the top/bottom margin on para is coming cause of defualt styling by the browsers and not from our css we can see if we make p a div the gap doesn't exist anymore-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos corrupti facilis labore est nesciunt, vero sit illo cumque aliquam atque consequatur saepe? Ratione, sunt. Delectus distinctio, ipsam optio quo harum necessitatibus nostrum nulla in?
+    </p>
+</body>
+</html>

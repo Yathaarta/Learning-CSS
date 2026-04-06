@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make A Card Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(227, 224, 224);
+        }
+
+        .card {
+            background-color: white;
+            padding: 7px;
+            width: 320px;
+            border-radius: 10px;
+            margin: 10px;
+            font-family: 'Open Sans';
+            font-weight: 500;
+            color: rgb(116, 116, 116);
+        }
+
+        .card:hover {
+            box-shadow: 2px 2px 18px gray;
+            transition: 0.3s;
+            transform: translateY(-3px)
+        }
+
+        #imgidentity {
+            border-radius: 10px;
+        }
+
+        .tags {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 13px;
+        }
+
+        .tags span {
+            font-size: 13px;
+            padding: 1.5px 6px;
+            border: 1px solid gray;
+            border-radius: 13px;
+            margin-right: 5px;
+        }
+
+        h2 {
+            margin: 15px 10px 10px 10px;
+            color: black;
+        }
+
+        .description {
+            margin: 15px 10px 10px 10px;
+        }
+
+        .more {
+            text-align: center;
+            margin: 15px 0px;
+        }
+        .more button {
+            background-color: rgba(114, 182, 255, 0.4);
+            color: rgb(17, 74, 208);
+            padding: 12px 22px;
+            border: none;
+            border-radius: 25px;
+            font-size: 13px;
+        }
+        .more button:hover {
+            cursor: pointer;
+            background-color: rgba(114, 182, 255, 0.7);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!--make a card resemblimg the card shown in CodeWithHarrdy sigmawebdev course tutorial#29-->
+    <div class="card">
+        <img id="imgidentity" src="https://picsum.photos/320/250">
+        <div class="tags">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <h2>Mai card hu</h2>
+        <div class="description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque, ut error labore, fugiat fuga fugit
+            in earum dolorem sapiente veniam sunt.
+        </div>
+        <div class="more">
+            <button><strong>Read More</strong></button>
+        </div>
+    </div>
+</body>
+
+</html>
