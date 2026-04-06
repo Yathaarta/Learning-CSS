@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:'Baloo Bhai 2';
+        }
+        body {
+            background-color: rgb(68, 164, 110);
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+        }
+        
+        .nav {
+            height: 65px;
+            background-color: khaki;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            color: brown;
+            border-bottom: 2px solid brown;
+            
+        } 
+
+        .branding {
+            display: flex;
+            align-items: center;
+            margin-left: 15px; 
+        }
+
+        .pages {
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            
+        }
+        .pages h2 {
+            border: 2px solid brown;
+            padding: 0px 5px;
+            border-radius: 5px;
+        }
+        .pages h2:hover {
+            cursor: pointer;
+            transform: translateY(-2px);
+            background-color:rgb(244, 242, 205);
+            /* background-color: rgb(246, 206, 213); */
+            text-decoration: underline;
+            
+        }
+
+        .searchbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .searchbar input {
+            padding: 7px;
+            width: 50%;
+            border-radius: 10px;
+        }
+        .searchbar button {
+            padding: 6px 7px;   
+            border-radius: 8px;
+            background-color: pink;
+            
+        }
+        
+        
+        .container {
+            background-color: lightgreen;
+            height: 100vh;
+            /* width: 100vw; */
+            margin: 24px 28px;
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: brown;
+        }
+        .box1, .box2 {
+            box-sizing: border-box;
+            height: 85%;
+            width: 46%;
+            background-color: rgb(248, 235, 238);
+            margin: 10px;
+            border: 2px solid darkblue;
+            padding: 10px;
+            overflow: scroll;
+            scrollbar-width: thin;
+        }
+        .box2 {
+            background-color: aqua;
+            color: rgb(192, 66, 66)
+        }
+        .advertised {
+            justify-content: center;
+            display: flex;
+            /* padding: 150px; */
+            height: 80vh;
+            margin: 0px 28px;
+            background-color: whitesmoke;
+            align-items: center;
+        }
+        .advertised .content {
+            height: fit-content;
+            text-align: center;
+            border-radius: 15px;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        
+        .realinfo {
+            margin-top: 35vh;
+            display: flex;
+            color:rgb(45, 42, 42);
+            height: 40vh;
+            justify-content: center;
+            gap:90px;
+            align-items: end;
+            border-top: 2px solid black;
+            background-color: rgb(95, 153, 95);
+            
+        }
+
+        .realinfo .content {
+            box-sizing: border-box;
+            height: 250px;
+            padding: 25px;
+        }
+        .realinfo .content ul {
+            list-style-type: disc;
+            padding-left: 35px;
+            font-size: large;
+        }
+
+        .realinfo .photo {
+            height: 265px;
+        }
+        .realinfo .logo {
+            height: 250px;
+            width: 250px;
+            box-sizing: border-box;
+            padding: 22.5px;
+        }
+        
+        footer .sticker {
+            padding: 7px;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="branding">
+                <img style="height: 65px; width: 65px;" src="https://i.postimg.cc/Y9WSPKs1/image-Photoroom.png">
+                <h1>ColorFUll</h1>
+            </div>
+            <div class="pages">
+                <h2>Home</h2>
+                <h2>Blogs</h2>
+                <h2>About</h2>
+                <h2>Community</h2>
+            </div>
+            <div class="searchbar">
+                <input type="text" name="search-val" id="search-key" placeholder=" Search" >
+                <button>Go</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1">
+                <h1>Who am I!</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptas rerum iusto enim nesciunt provident nisi debitis, atque dolorum, tenetur quisquam reprehenderit earum laudantium odio error amet, quaerat ullam ea. Odio suscipit facere, ducimus voluptates enim inventore dolorum voluptatem at aliquid qui expedita, eveniet officiis, cupiditate facilis reiciendis dicta eius nesciunt totam vel exercitationem? Labore, ipsa dolorum. Natus rerum esse suscipit tenetur excepturi nisi illo sequi iusto magni eius, ratione molestias voluptate delectus quasi perferendis recusandae facere nulla vitae quidem officia. Omnis quis, animi hic eveniet suscipit ex at officiis totam distinctio similique harum quas mollitia! Odit vel tenetur sequi dolore blanditiis quis eaque. Dolores non eligendi cum eius ratione, ipsum laborum accusantium odit voluptas repellendus quisquam iure blanditiis repudiandae qui distinctio quis reprehenderit vitae pariatur obcaecati, numquam vero accusamus tenetur et! Pariatur sunt aperiam fuga nobis earum nam placeat atque, voluptas esse architecto, iusto, velit ex saepe? Enim, blanditiis. Vitae debitis aliquam neque numquam! Quam rerum iure maxime. Explicabo quasi impedit nihil, perspiciatis ex fugit quis eligendi beatae, tenetur fugiat facere veritatis est illo, at sit autem blanditiis iure itaque voluptatibus quidem ea enim nostrum? Recusandae eos laudantium atque natus soluta deleniti hic quidem temporibus mollitia cupiditate inventore est quas quod vel a facere ab adipisci, dolores eaque aspernatur odio? Dolorem, molestias molestiae. Esse explicabo itaque ducimus iusto quidem error laborum aut dolorum saepe praesentium voluptatem, eius velit! Assumenda! Recusandae eos laudantium atque natus soluta deleniti hic quidem temporibus mollitia cupiditate inventore est quas quod vel a facere ab adipisci, dolores eaque aspernatur odio? Dolorem, molestias molestiae. 
+                </p>
+            </div>
+            <div class="box2">
+                <h1>What are you!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit dolor consequatur, mollitia magnam dolores atque numquam tenetur aut neque nesciunt fuga culpa dicta minus hic. Dolore velit, nemo ea numquam id quaerat. Atque dolorum error, veniam sint officiis dolor? Non nam quas sed iusto saepe facere quod fugiat dolor. Voluptatum blanditiis consequuntur ex harum fugit vel error reiciendis distinctio animi iusto laboriosam nam fuga dolor aspernatur ad sit iure, necessitatibus quidem est reprehenderit corrupti at. Nostrum tempora voluptatem, ducimus dolorem nihil rerum molestias adipisci nam laborum itaque hic ipsam omnis sapiente iusto nobis porro optio eos laboriosam accusantium unde fuga magnam cupiditate cum possimus. Deserunt iusto fugit molestiae placeat necessitatibus deleniti enim unde quas. Officiis cumque obcaecati fugiat ducimus dolore. Veritatis a explicabo quae adipisci dignissimos corporis, aperiam obcaecati deserunt quo soluta, ipsum quibusdam? Rerum consequatur quia quasi maiores in tempore quo, eaque pariatur, ratione libero eligendi inventore facilis fugiat aliquid eos corporis voluptatum aut velit porro tenetur doloremque! Vero repudiandae libero itaque esse ipsam officiis assumenda laboriosam cumque nisi veniam accusamus, nulla aliquam, harum nobis enim. Praesentium autem accusantium facere ipsam sed voluptatum veritatis fuga similique vero minus, adipisci necessitatibus laboriosam quos cupiditate quod dignissimos delectus sequi corrupti culpa. Et fugit numquam aliquid earum aperiam deserunt laboriosam rerum quos quisquam minima quia adipisci quod autem, dolorum quas id eum sequi consequatur assumenda nemo, delectus fuga. Sed, eius quam? Et fugit numquam aliquid earum aperiam deserunt laboriosam rerum quos quisquam minima quia adipisci quod autem, dolorum quas id eum sequi consequatur assumenda nemo, delectus fuga. Sed, eius quam?</p>
+            </div>
+        </div>
+        <div class="advertised">
+            <div class="content">
+                <h1>Subscribe My Channel For more such Designs</h1>
+                <h2>I upload a new design once in every week</h2>
+                <h3>Follow on: <a href="#">Facebook</a></h3>
+                <h3>Follow on: <a href="#">Github</a></h3>
+                <h3>Follow on: <a href="#">Youtube</a></h3>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="realinfo">
+            <div class="content">
+                <h1>Made as a part of practising CSS</h1>
+                <h2>~ by Yatharth Pandey 😁</h2>
+                <ul>
+                    <li>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yatharthpandey519@gmail.com" target="_blank">mail me</a></li>
+                    <li>Github: <a href="https://github.com/Yathaarta">visit</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/yatharth-pandey-72bb65233/">visit</a></li>
+                </ul>
+            </div>
+            <div class="photo">
+                <img src="https://avatars.githubusercontent.com/u/219024074?v=4" width="250px" height="250px">
+            </div>
+            <div class="logo">
+                <img src="https://i.postimg.cc/Y9WSPKs1/image-Photoroom.png" width="200px" height="200px">
+            </div>
+        </div>
+        <div class="sticker">
+            <img src="https://i.postimg.cc/Y9WSPKs1/image-Photoroom.png" height="55px" width="55px">
+        </div>
+    </footer>
+</body>
+</html>

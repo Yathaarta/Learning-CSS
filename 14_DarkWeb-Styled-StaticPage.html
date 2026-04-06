@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Website</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        :root {
+            --main-bg: #212121;
+            --sec-bg: black;
+            --main-col: rgb(226, 150, 150);
+        }
+        body {
+            background-color: var(--main-bg);
+        }
+
+        .nav {
+            background-color: var(--sec-bg);
+            font-size: 20px;
+            color: white;
+            display: flex;
+            border-bottom: 2px solid red;;
+            position: sticky;
+            top: 0px;
+            
+        }
+        
+        .nav ul {
+            display: flex;
+            list-style: none;
+            padding: 24px 15px 15px 15px;
+            margin-left: 23vw;
+            justify-self: center;
+        }
+        .nav ul li {
+            padding: 0px 15px 0px 15px;
+            color: var(--main-col);
+            text-shadow: 5px 2px 3px red;
+        }
+
+        .nav ul li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .grim-img {
+            padding: 0px 0px 0px 20px;
+        }
+        .nav h3 {
+            padding: 21px 15px 15px 15px;
+            color: rgb(226, 150, 150);
+            text-shadow: 5px 2px 3px red;
+        }
+
+        .HeroBox {
+            height: fit-content;
+            width: 60vw;
+            background-color: var(--sec-bg);
+            border: 2px solid darkred;
+            box-sizing: border-box;
+            margin: 25px auto;
+            border-radius: 15px;
+        }
+        .feilds {
+            color: rgb(204, 164, 164); 
+            background-color: darkred;
+            text-align: center;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 15px;
+        }
+        .feilds span {
+            background-color: var(--main-bg);
+            padding: 4px 12px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .feilds span:hover {
+            background-color: rgb(196, 130, 130);
+            color: var(--main-bg);
+            text-shadow: 1px 2px 2px red;
+            cursor: pointer;
+        }
+        .blogs {
+            color: var(--main-col);
+            padding: 5px;
+            
+        }
+        .blogs .blog {
+            border-top: 2px solid darkred;
+        }
+        
+        .blog h2 {
+            padding: 15px 15px 15px 45px;
+        }
+        .content{
+            display:flex;
+            padding: 15px 25px 15px 30px;
+        }
+        .blog:nth-child(odd) img {
+            padding: 0px 0px 0px 10px;
+        }
+        .blog:nth-child(even) img {
+            padding: 0px 15px 15px 0px;
+        }
+        .ads1{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+        .ads2{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 260px;
+            left: 0px;
+        }
+        .ads1 img, .ads2 img{
+            height: 280px;
+            width: 280px;
+            margin: 2px;
+            opacity: 0.6;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="grim-img">
+            <img src="https://i.ibb.co/Zz0qNTs0/grim-reaper.jpg" width="70px" height="70px">
+        </div>
+        <h3>Killer Assasins</h3>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="HeroBox">
+        <div class="feilds">
+            <span>Popular</span>
+            <span>Most Read</span>
+            <span>Latest</span>
+        </div>
+        <div class="blogs">
+            <div class="blog">
+                <h2>Active Secret Societies around the World.</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ex voluptates voluptatem mollitia ipsa! Accusamus assumenda itaque possimus quasi fugit labore consequuntur ipsam adipisci harum praesentium dolore eveniet consequatur, recusandae aliquid ad placeat similique ratione animi sed, ullam, odit laborum. Enim nobis, eaque suscipit aliquam exercitationem quas sequi dolore voluptatibus quibusdam dolores ab cum accusantium eum doloremque ipsum minima non amet deleniti, quidem est. Dignissimos beatae autem quo similique qui ad molestiae veritatis, quaerat quia blanditiis voluptatum consequatur optio odio itaque quisquam aspernatur accusantium cupiditate.<br>
+                    <a href="#">Read More →</a></p>
+                    <img src="https://picsum.photos/id/870/250/200?grayscale&blur=1">
+                </div>
+            </div>
+            <div class="blog">
+                <h2>Charles Tailor found dead in hotel room!</h2>
+                <div class="content">
+                    <img src="https://picsum.photos/id/160/250/200?grayscale&blur=1">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ex voluptates voluptatem mollitia ipsa! Accusamus assumenda itaque possimus quasi fugit labore consequuntur ipsam adipisci harum praesentium dolore eveniet consequatur, recusandae aliquid ad placeat similique ratione animi sed, ullam, odit laborum. Enim nobis, eaque suscipit aliquam exercitationem quas sequi dolore voluptatibus quibusdam dolores ab cum accusantium eum doloremque ipsum minima non amet deleniti, quidem est. Dignissimos beatae autem quo similique qui ad molestiae veritatis, quaerat quia blanditiis voluptatum consequatur optio odio itaque quisquam aspernatur accusantium cupiditate.<br>
+                    <a href="#">Read More →</a></p>
+                </div>
+            </div>
+            <div class="blog">
+                <h2>Is Russian spy network still working in World? </h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ex voluptates voluptatem mollitia ipsa! Accusamus assumenda itaque possimus quasi fugit labore consequuntur ipsam adipisci harum praesentium dolore eveniet consequatur, recusandae aliquid ad placeat similique ratione animi sed, ullam, odit laborum. Enim nobis, eaque suscipit aliquam exercitationem quas sequi dolore voluptatibus quibusdam dolores ab cum accusantium eum doloremque ipsum minima non amet deleniti, quidem est. Dignissimos beatae autem quo similique qui ad molestiae veritatis, quaerat quia blanditiis voluptatum consequatur optio odio itaque quisquam aspernatur accusantium cupiditate.<br>
+                    <a href="#">Read More →</a></p>
+                    <img src="https://picsum.photos/id/970/250/200?grayscale&blur=1">
+                </div>
+            </div>
+            <div class="blog">
+                <h2>Terrorist organisations using crypto.</h2>
+                <div class="content">
+                    <img src="https://picsum.photos/id/170/250/200?grayscale&blur=1">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ex voluptates voluptatem mollitia ipsa! Accusamus assumenda itaque possimus quasi fugit labore consequuntur ipsam adipisci harum praesentium dolore eveniet consequatur, recusandae aliquid ad placeat similique ratione animi sed, ullam, odit laborum. Enim nobis, eaque suscipit aliquam exercitationem quas sequi dolore voluptatibus quibusdam dolores ab cum accusantium eum doloremque ipsum minima non amet deleniti, quidem est. Dignissimos beatae autem quo similique qui ad molestiae veritatis, quaerat quia blanditiis voluptatum consequatur optio odio itaque quisquam aspernatur accusantium cupiditate.<br>
+                    <a href="#">Read More →</a></p>
+                </div>
+            </div>
+            <div class="blog">
+                <h2>Who killed Veronica Luttenfeig!</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ex voluptates voluptatem mollitia ipsa! Accusamus assumenda itaque possimus quasi fugit labore consequuntur ipsam adipisci harum praesentium dolore eveniet consequatur, recusandae aliquid ad placeat similique ratione animi sed, ullam, odit laborum. Enim nobis, eaque suscipit aliquam exercitationem quas sequi dolore voluptatibus quibusdam dolores ab cum accusantium eum doloremque ipsum minima non amet deleniti, quidem est. Dignissimos beatae autem quo similique qui ad molestiae veritatis, quaerat quia blanditiis voluptatum consequatur optio odio itaque quisquam aspernatur accusantium cupiditate.<br>
+                    <a href="#">Read More →</a></p>
+                    <img src="https://picsum.photos/id/670/250/200?grayscale&blur=1">
+                </div>
+            </div>
+            <div class="blog">
+                <h2>Who killed Veronica Luttenfeig!</h2>
+                <div class="content">
+                    <img src="https://picsum.photos/id/570/250/200?grayscale&blur=1">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ex voluptates voluptatem mollitia ipsa! Accusamus assumenda itaque possimus quasi fugit labore consequuntur ipsam adipisci harum praesentium dolore eveniet consequatur, recusandae aliquid ad placeat similique ratione animi sed, ullam, odit laborum. Enim nobis, eaque suscipit aliquam exercitationem quas sequi dolore voluptatibus quibusdam dolores ab cum accusantium eum doloremque ipsum minima non amet deleniti, quidem est. Dignissimos beatae autem quo similique qui ad molestiae veritatis, quaerat quia blanditiis voluptatum consequatur optio odio itaque quisquam aspernatur accusantium cupiditate.<br>
+                    <a href="#">Read More →</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ads1">
+        <img src="https://varutra-1a3b6.kxcdn.com/wp-content/webp-express/webp-images/uploads/2021/11/Alphabay-Market.png.webp">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSol7EFpm0N36xHDmuCBFb3G9fcGQpgKX9MVg&s">
+    </div>
+    <div class="ads2">
+        <img src="https://varutra-1a3b6.kxcdn.com/wp-content/webp-express/webp-images/uploads/2021/11/Salayers-Assassination-life-Runing-Services.png.webp">
+    </div>
+</body>
+</html>
