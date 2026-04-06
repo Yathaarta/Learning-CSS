@@ -19,14 +19,14 @@ An ambitious project started in early 2026 to recreate the iconic Netflix interf
 * **Status:** Half-built, currently unresponsive.
 * **Concepts:** Complex layouts, structural planning.
 
-[![View Demo](https://img.shields.io/badge/View_Demo-E50914?style=for-the-badge&logo=netflix&logoColor=white)](https://yathaarta.github.io/Learning-CSS/Netflix-Clone-2026/index.html)
+[![View Demo](https://img.shields.io/badge/View_Demo-E50914?style=for-the-badge&logo=netflix&logoColor=white)](https://yathaarta.github.io/Learning-CSS/Netflix%20Clone%202026/)
 
 ### 2. Early-2000s "Dark Web" Styled Page
 A creative static page leaning into the nostalgia of the early internet. It features a dark, gritty, early-2000s aesthetic.
 * **File:** `14_DarkWeb-Styled-StaticPage.html`
 * **Concepts:** Typography, color theory, classic web styling.
 
-[![View Demo](https://img.shields.io/badge/View_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://yathaarta.github.io/Learning-CSS/14_DarkWeb-Styled-StaticPage.html)
+[![View Demo](https://img.shields.io/badge/View_Demo-273747?style=for-the-badge&logo=vercel&logoColor=white)](https://yathaarta.github.io/Learning-CSS/14_DarkWeb-Styled-StaticPage.html)
 
 ### 3. Colorful Kids Theme Page
 A vibrant, highly colorful, and playful static page designed to look like a children's website. 
